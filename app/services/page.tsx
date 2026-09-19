@@ -12,14 +12,14 @@ export const metadata: Metadata = {
 const programmes = [
   {
     href: "/onco-recovery",
-    img: "/images/onco-recovery.jpg",
+    img: "/images/onco-recovery-support.jpeg",
     alt: "Onco-Recovery & Support",
     title: "Onco-Recovery & Support",
     body: "Supportive care focused on nutrition, rehabilitation, physical function and overall well-being during or after cancer treatment.",
   },
   {
     href: "/digestive-gut-care",
-    img: "/images/digestive-gut-care.jpg",
+    img: "/images/digestive-gut-support.jpeg",
     alt: "Digestive & Gut Health Support",
     title: "Digestive & Gut Health Support",
     body: "Clinical nutrition and lifestyle support for people managing digestive and gastrointestinal health needs, alongside appropriate medical guidance.",
@@ -33,7 +33,7 @@ const programmes = [
   },
   {
     href: "/physiotherapy-rehabilitation",
-    img: "/images/physical-rehab-msk-care.jpg",
+    img: "/images/physical-rehabilitation.jpeg",
     alt: "Physical Rehabilitation & Musculoskeletal Care",
     title: "Physical Rehabilitation & Musculoskeletal Care",
     body: "Physiotherapy-led rehabilitation and movement support for musculoskeletal conditions, post-operative recovery, joint replacement and other physical health needs.",
@@ -47,7 +47,7 @@ const programmes = [
   },
   {
     href: "/post-surgical-hospital-to-home",
-    img: "/images/doctor.jpg",
+    img: "/images/post-surgical.jpeg",
     alt: "Post-Surgical & Hospital-to-Home Care",
     title: "Post-Surgical & Hospital-to-Home Care",
     body: "Continued physiotherapy, nutrition and lifestyle support for patients transitioning from hospital or surgery into recovery at home and everyday life.",

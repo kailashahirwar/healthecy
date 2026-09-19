@@ -43,9 +43,9 @@ export default function ContactPage() {
                 <Phone size={20} className="mt-0.5 shrink-0 text-accent" />
                 <span>{displayPhone}</span>
               </a>
-              <div className="flex items-start gap-4">
-                <MapPin size={20} className="mt-0.5 shrink-0 text-accent" />
-                <span>India</span>
+              <div className="flex items-center gap-4">
+                <MapPin size={20} className="shrink-0 text-accent" />
+                <span>Lake City, Bommanahalli, Bengaluru, Karnataka, India – 560076</span>
               </div>
             </div>
             <p className="mt-10 border-t border-primary-foreground pt-6 text-sm leading-6">
