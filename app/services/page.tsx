@@ -61,7 +61,7 @@ const programmes = [
   },
   {
     href: "/healthy-ageing-geriatric-care",
-    img: "/images/about-clinical-lead.jpg",
+    img: "/images/healthy-ageing.jpeg",
     alt: "Healthy Ageing & Geriatric Care",
     title: "Healthy Ageing & Geriatric Care",
     body: "Ongoing physiotherapy, nutrition and lifestyle support for older adults, focused on maintaining mobility, nutritional health, independence and quality of life.",
