@@ -62,7 +62,7 @@ export default function InternationalPatientsPage() {
       panelNote="Healthecy does not guarantee doctor availability, hospital admission, visas, travel documents or treatment outcomes. Medical decisions remain with appropriately qualified healthcare professionals."
       ctaTitle="Planning treatment in India?"
       ctaBody="Tell us your healthcare requirement, home country and preferred city. We will guide you through the next steps."
-      ctaLabel="Talk to International Support"
+      ctaLabel="Connect with Our International Care Team"
     />
   );
 }

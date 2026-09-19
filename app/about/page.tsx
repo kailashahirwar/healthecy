@@ -80,7 +80,7 @@ export default function AboutPage() {
       </section>
 
       <DarkCtaBand
-        title="Talk to Healthecy about your next step."
+        title="Talk to Our Care Team About Your Next Step."
         body="Whether you are a patient, family member or healthcare professional, we are here to help make the journey clearer."
         href="/contact"
         cta="Contact Healthecy"

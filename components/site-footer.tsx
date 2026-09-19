@@ -55,7 +55,7 @@ export function SiteFooter() {
             </nav>
           </div>
           <div>
-            <h2 className="text-sm font-bold">Talk to Healthecy</h2>
+            <h2 className="text-sm font-bold">Get in Touch</h2>
             <div className="mt-4 flex flex-col gap-3 text-sm">
               <a href={`mailto:${inquiryEmail}`} className="flex items-center gap-2 hover:text-accent">
                 <Mail size={16} />

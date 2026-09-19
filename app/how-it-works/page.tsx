@@ -64,7 +64,7 @@ export default function HowItWorksPage() {
               Start with a conversation about the support you need.
             </p>
           </div>
-          <CtaLink href="/contact">Talk to Healthecy</CtaLink>
+          <CtaLink href="/contact">Talk to an Advisor</CtaLink>
         </div>
       </section>
     </>

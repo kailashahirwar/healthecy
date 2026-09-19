@@ -573,8 +573,6 @@ export default function PrivacyPage() {
                 <br />
                 Brand: Healthecy
                 <br />
-                Privacy / Grievance Officer or Contact Person: [INSERT NAME / DESIGNATION]
-                <br />
                 Email:{" "}
                 <a className="font-semibold text-accent" href={`mailto:${inquiryEmail}`}>
                   {inquiryEmail}

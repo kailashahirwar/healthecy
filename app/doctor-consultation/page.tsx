@@ -75,7 +75,7 @@ export default function DoctorConsultationPage() {
       panelNote="Healthecy does not replace doctors or provide every medical specialty. We help coordinate access to associated specialist medical advisors and clinical partners when medical guidance is required."
       ctaTitle="Start with a conversation."
       ctaBody="Tell us what you need and we’ll help you understand the next step."
-      ctaLabel="Request a Consultation"
+      ctaLabel="Book a Doctor Consultation"
     />
   );
 }

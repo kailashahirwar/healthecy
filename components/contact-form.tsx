@@ -103,7 +103,7 @@ export function ContactForm() {
           disabled={status === "sending"}
           className="mt-7 inline-flex h-10 items-center justify-center rounded-full bg-primary px-6 py-6 text-sm font-bold text-primary-foreground disabled:opacity-70"
         >
-          {status === "sending" ? "Sending…" : "Talk to Us"}
+          {status === "sending" ? "Sending…" : "Submit Enquiry"}
         </button>
         {status === "error" ? <p className="mt-4 text-sm text-red-600">{error}</p> : null}
       </form>

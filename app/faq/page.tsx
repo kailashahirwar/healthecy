@@ -33,7 +33,7 @@ export default function FaqPage() {
         title="Still have a question?"
         body="Talk to our care team about your healthcare requirement and the support you are looking for."
         href="/contact"
-        cta="Talk to Healthecy"
+        cta="Talk to Our Care Team"
         variant="accent"
       />
     </>

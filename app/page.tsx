@@ -97,7 +97,7 @@ export default function HomePage() {
                 href="/contact"
                 className="inline-flex h-10 items-center justify-center gap-2 rounded-full bg-primary px-6 py-6 text-sm font-bold text-primary-foreground"
               >
-                Talk to Healthecy
+                Talk to Our Care Team
                 <ArrowRight size={17} />
               </Link>
               <Link

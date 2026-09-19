@@ -56,7 +56,7 @@ export function SiteHeader() {
             href="/contact"
             className="hidden whitespace-nowrap rounded-full bg-primary px-4 py-3 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-0.5 sm:inline-flex xl:px-5"
           >
-            Talk To Us
+            Contact Us
           </Link>
           <button
             type="button"
