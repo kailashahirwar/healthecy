@@ -34,7 +34,7 @@ export default function MetabolicHeartCarePage() {
       noteBody="Healthecy is not an emergency service. Chest pain, severe breathlessness, fainting or other urgent symptoms require immediate medical attention."
       ctaTitle="Bring more clarity to your health journey."
       ctaBody="Talk to our team about coordinated support around your existing medical care."
-      ctaLabel="Discuss Metabolic, Hormonal & Heart Care"
+      ctaLabel="Discuss Metabolic, Hormonal & Cardiovascular Health"
     />
   );
 }

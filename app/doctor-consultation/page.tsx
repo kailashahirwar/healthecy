@@ -52,6 +52,7 @@ export default function DoctorConsultationPage() {
       }}
       sectionTitle="Specialist Medical Advisors"
       cards={specialists}
+      columns={3}
       extra={
         <>
           <p className="mt-10 max-w-3xl text-lg leading-8 text-muted-foreground">

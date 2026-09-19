@@ -13,9 +13,14 @@ export default function InternationalPatientsPage() {
       intro={{
         eyebrow: "International Patient Support",
         title: "Healthcare in India, coordinated with clarity.",
-        body: "Healthecy provides coordinated support for international patients seeking healthcare in India, from online consultation and medical coordination to travel, accommodation and local assistance. Following treatment, our team can also coordinate appropriate rehabilitation, clinical nutrition, lifestyle support and continued care based on the patient’s needs.",
+        body: [
+          "Healthecy provides coordinated support for international patients seeking healthcare in India, from online consultation and medical coordination to travel, accommodation and local assistance.",
+          "Following treatment, our team can also coordinate appropriate rehabilitation, clinical nutrition, lifestyle support and continued care based on the patient’s needs.",
+        ],
       }}
       sectionTitle="International Patient Journey"
+      columns={3}
+      numbered
       cards={[
         {
           title: "Initial Consultation & Medical Assessment",

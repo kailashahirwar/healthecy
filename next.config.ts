@@ -25,6 +25,7 @@ const htmlRedirects = [
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
+  serverExternalPackages: ["nodemailer"],
   async redirects() {
     return [
       { source: "/index.html", destination: "/", permanent: true },

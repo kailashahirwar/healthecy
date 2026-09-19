@@ -31,11 +31,13 @@ export function CtaLink({ href, children, variant = "primary", className = "" }:
 type PageIntroProps = {
   eyebrow: string;
   title: string;
-  body: string;
+  body: string | string[];
   titleClassName?: string;
 };
 
 export function PageIntro({ eyebrow, title, body, titleClassName = "max-w-4xl" }: PageIntroProps) {
+  const paragraphs = Array.isArray(body) ? body : [body];
+
   return (
     <section className="bg-secondary px-5 py-16 lg:px-8 lg:py-24">
       <div className="mx-auto max-w-7xl">
@@ -43,7 +45,11 @@ export function PageIntro({ eyebrow, title, body, titleClassName = "max-w-4xl" }
         <h1 className={`mt-4 ${titleClassName} whitespace-pre-line text-5xl font-extrabold tracking-[-0.06em] text-primary sm:text-6xl`}>
           {title}
         </h1>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">{body}</p>
+        {paragraphs.map((paragraph) => (
+          <p key={paragraph} className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
+            {paragraph}
+          </p>
+        ))}
       </div>
     </section>
   );
@@ -159,10 +165,18 @@ export function StructuredProgramme({
   );
 }
 
+const columnClasses = {
+  2: "lg:grid-cols-2",
+  3: "lg:grid-cols-3",
+  4: "lg:grid-cols-4",
+} as const;
+
 export function ServiceLayout({
   intro,
   sectionTitle,
   cards,
+  columns: columnCount,
+  numbered = false,
   extra,
   panelNote,
   ctaTitle,
@@ -172,13 +186,15 @@ export function ServiceLayout({
   intro: PageIntroProps;
   sectionTitle: string;
   cards: Card[];
+  columns?: keyof typeof columnClasses;
+  numbered?: boolean;
   extra?: ReactNode;
   panelNote?: string;
   ctaTitle: string;
   ctaBody: string;
   ctaLabel: string;
 }) {
-  const columns = cards.length > 3 ? "lg:grid-cols-4" : "lg:grid-cols-2";
+  const columns = columnCount ? columnClasses[columnCount] : cards.length > 3 ? "lg:grid-cols-4" : "lg:grid-cols-2";
 
   return (
     <>
@@ -187,9 +203,13 @@ export function ServiceLayout({
         <div className="mx-auto max-w-7xl">
           <h2 className="text-4xl font-extrabold tracking-[-0.05em] text-primary">{sectionTitle}</h2>
           <div className={`mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 ${columns}`}>
-            {cards.map((item) => (
+            {cards.map((item, index) => (
               <article key={item.title} className="rounded-2xl border border-border bg-card p-6">
-                <CircleCheck size={22} className="text-accent" />
+                {numbered ? (
+                  <span className="text-sm font-bold text-accent">{String(index + 1).padStart(2, "0")}</span>
+                ) : (
+                  <CircleCheck size={22} className="text-accent" />
+                )}
                 <h3 className="mt-8 text-xl font-bold text-primary">{item.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-muted-foreground">{item.body}</p>
               </article>
