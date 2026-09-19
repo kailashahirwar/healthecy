@@ -72,7 +72,7 @@ export function SiteFooter() {
             </div>
             <div className="mt-6 flex gap-3">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/healthecy"
                 aria-label="Healthecy on LinkedIn"
                 className="rounded-full border border-primary-foreground p-2 hover:bg-primary-foreground hover:text-primary"
                 target="_blank"
@@ -85,7 +85,7 @@ export function SiteFooter() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.Instagram.com/healthecy"
                 aria-label="Healthecy on Instagram"
                 className="rounded-full border border-primary-foreground p-2 hover:bg-primary-foreground hover:text-primary"
                 target="_blank"
